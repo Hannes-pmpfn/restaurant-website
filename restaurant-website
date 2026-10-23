@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Noir | Restaurant & Bar</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#11110f;color:#f5f0e6;font-family:Arial,sans-serif}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #39362f}
+.logo{font-size:22px;letter-spacing:5px;font-weight:bold}
+nav a{color:#eee5d5;text-decoration:none;margin-left:24px;font-size:14px}
+.hero{min-height:78vh;padding:100px 8%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:linear-gradient(90deg,#11110f 5%,#11110fcc 55%,#11110f44),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85') center/cover}
+.tag{color:#d7b77b;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(44px,8vw,90px);line-height:1.02;margin:20px 0;max-width:800px}
+.hero p{color:#d0c8b9;line-height:1.8;max-width:480px}
+.btn{display:inline-block;padding:15px 24px;background:#d7b77b;color:#17140e;text-decoration:none;margin-top:20px;font-weight:bold}
+section{padding:75px 8%}
+h2{font-size:36px;margin-top:12px}
+.intro{max-width:650px;color:#c5bdae;line-height:1.8}
+.menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}
+.dish{padding:22px;border:1px solid #454035}
+.dish h3{margin-top:0}
+.dish p{color:#bcb3a3;line-height:1.6}
+.price{color:#d7b77b}
+.info{background:#1b1a17;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.info p{color:#c5bdae;line-height:1.8}
+footer{text-align:center;padding:30px;color:#a9a293;border-top:1px solid #39362f;font-size:13px}
+@media(max-width:650px){
+header{padding:20px 5%;flex-wrap:wrap;gap:18px}
+.logo{font-size:18px}
+nav a{margin-left:12px;font-size:12px}
+.hero{padding:80px 6%;min-height:70vh}
+section{padding:55px 6%}
+.menu,.info{grid-template-columns:1fr}
+h2{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MAISON NOIR</div>
+  <nav>
+    <a href="#menu">Menü</a>
+    <a href="#about">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <span class="tag">RESTAURANT · BAR · FRANKFURT</span>
+    <h1>Ein Abend.<br>Ein Erlebnis.</h1>
+    <p>Gutes Essen, ausgewählte Zutaten und eine Atmosphäre, die jeden Abend besonders macht.</p>
+    <a class="btn" href="#menu">UNSER MENÜ ENTDECKEN</a>
+  </div>
+
+  <section id="about">
+    <span class="tag">WILLKOMMEN BEI MAISON NOIR</span>
+    <h2>Geschmack trifft Atmosphäre.</h2>
+    <p class="intro">Ein Ort für besondere Momente. Entdecke unsere moderne Küche, genieße den Abend mit Freunden und lass dich von unserem Ambiente inspirieren.</p>
+  </section>
+
+  <section id="menu">
+    <span class="tag">AUSGEWÄHLTE SPEISEN</span>
+    <h2>Unsere Speisekarte</h2>
+    <p class="intro">Eine kleine Auswahl unserer Beispielgerichte. Preise und Gerichte kannst du nach deinen Vorstellungen ändern.</p>
+    <div class="menu">
+      <article class="dish">
+        <h3>Trüffel-Pasta</h3>
+        <p>Frische Pasta, Parmesan und aromatischer Trüffel.</p>
+        <span class="price">18,50 €</span>
+      </article>
+      <article class="dish">
+        <h3>Grilliertes Rinderfilet</h3>
+        <p>Mit Rosmarinkartoffeln und saisonalem Gemüse.</p>
+        <span class="price">29,90 €</span>
+      </article>
+      <article class="dish">
+        <h3>Burrata & Tomaten</h3>
+        <p>Cremige Burrata, reife Tomaten und Basilikum.</p>
+        <span class="price">13,50 €</span>
+      </article>
+      <article class="dish">
+        <h3>Schokoladen-Dessert</h3>
+        <p>Ein feines Dessert für den perfekten Abschluss.</p>
+        <span class="price">9,50 €</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="info" id="kontakt">
+    <div>
+      <span class="tag">BESUCH UNS</span>
+      <h2>Kontakt</h2>
+      <p>Frankfurt am Main<br>Adresse bitte ergänzen</p>
+    </div>
+    <div>
+      <span class="tag">ÖFFNUNGSZEITEN</span>
+      <h2>Wann?</h2>
+      <p>Montag – Freitag: 17–23 Uhr<br>Samstag – Sonntag: 12–24 Uhr</p>
+    </div>
+    <div>
+      <span class="tag">DEIN TISCH</span>
+      <h2>Reservieren</h2>
+      <p>Kontaktiere uns für eine Reservierung.</p>
+      <a class="btn" href="mailto:deine-email@example.com?subject=Tischreservierung">ANFRAGE SENDEN</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Maison Noir · Restaurant & Bar</footer>
+</body>
+</html>
